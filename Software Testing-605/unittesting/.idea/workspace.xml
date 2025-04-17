@@ -18,10 +18,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2vnsGd84Vni2iFs3tKUuWxAP1o3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,9 +34,13 @@
     "JUnit.ArithmeticOperationsTest.divide_with_zero.executor": "Run",
     "JUnit.ArithmeticOperationsTest.executor": "Run",
     "JUnit.ArithmeticOperationsTest.multiply_when_negative.executor": "Run",
+    "JUnit.ArrayOperationsTest.executor": "Run",
+    "JUnit.ArrayOperationsTest.testFindPrimesInFileNormal.executor": "Run",
     "JUnit.MyClassTest.div.executor": "Run",
     "JUnit.MyClassTest.div_with_zero.executor": "Run",
     "JUnit.MyMathTest.executor": "Run",
+    "JUnit.MyMathTest.factorialNormal.executor": "Run",
+    "JUnit.MyMathTest.isPrimeNormal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
@@ -86,38 +90,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArithmeticOperationsTest.divide_normal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unittesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.ArithmeticOperationsTest" />
-      <option name="METHOD_NAME" value="divide_normal" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArithmeticOperationsTest.divide_with_zero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unittesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.ArithmeticOperationsTest" />
-      <option name="METHOD_NAME" value="divide_with_zero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ArithmeticOperationsTest.multiply_when_negative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unittesting" />
       <extension name="coverage">
@@ -134,11 +106,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClassTest.div_with_zero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayOperationsTest.testFindPrimesInFileNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unittesting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyClassTest" />
-      <option name="METHOD_NAME" value="div_with_zero" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.ArrayOperationsTest" />
+      <option name="METHOD_NAME" value="testFindPrimesInFileNormal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMathTest.factorialNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unittesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.MyMathTest" />
+      <option name="METHOD_NAME" value="factorialNormal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMathTest.isPrimeNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unittesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.MyMathTest" />
+      <option name="METHOD_NAME" value="isPrimeNormal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArithmeticOperationsTest.multiply_when_negative" />
-        <item itemvalue="JUnit.ArithmeticOperationsTest.divide_with_zero" />
-        <item itemvalue="JUnit.ArithmeticOperationsTest.divide_normal" />
+        <item itemvalue="JUnit.ArrayOperationsTest.testFindPrimesInFileNormal" />
+        <item itemvalue="JUnit.MyMathTest.factorialNormal" />
+        <item itemvalue="JUnit.MyMathTest.isPrimeNormal" />
         <item itemvalue="JUnit.ArithmeticOperationsTest.divide" />
-        <item itemvalue="JUnit.ArithmeticOperationsTest.divide_with_zero" />
+        <item itemvalue="JUnit.ArithmeticOperationsTest.multiply_when_negative" />
       </list>
     </recent_temporary>
   </component>
