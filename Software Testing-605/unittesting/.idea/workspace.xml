@@ -36,6 +36,7 @@
     "JUnit.ArithmeticOperationsTest.multiply_when_negative.executor": "Run",
     "JUnit.ArrayOperationsTest.executor": "Run",
     "JUnit.ArrayOperationsTest.testFindPrimesInFileNormal.executor": "Run",
+    "JUnit.FileIOTest.executor": "Run",
     "JUnit.MyClassTest.div.executor": "Run",
     "JUnit.MyClassTest.div_with_zero.executor": "Run",
     "JUnit.MyMathTest.executor": "Run",
@@ -53,6 +54,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="io" />
       <recent name="math" />
       <recent name="" />
     </key>
