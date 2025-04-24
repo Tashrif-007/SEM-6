@@ -15,7 +15,7 @@ public class FileIOTest {
     @Test
     public void readFileNormal() {
         int[] expected = {3,9,2,0,10,9,3,8,0,3};
-        int[] actual = fileIO.readFile("/home/tashrif/Downloads/unittesting/src/test/resources/grades_valid.txt");
+        int[] actual = fileIO.readFile("/home/tashrif/Desktop/SEM-6/Software Testing-605/unittesting/src/test/resources/grades_valid.txt");
         assertArrayEquals(expected,actual);
     }
 
@@ -31,8 +31,10 @@ public class FileIOTest {
         int[] actual = fileIO.readFile("/home/tashrif/Downloads/unittesting/src/test/resources/empty_files.txt");
     }
 
-    @Test (expected = NumberFormatException.class)
+    @Test
     public void test_for_invalid_entry() {
-        fileIO.readFile("/home/tashrif/Downloads/unittesting/src/test/resources/grades_invalid.txt");
+        int[] expected = {3,9,2,10,8,0,3};
+        int[] actual = fileIO.readFile("/home/tashrif/Desktop/SEM-6/Software Testing-605/unittesting/src/test/resources/grades_invalid.txt");
+        assertArrayEquals(expected, actual);
     }
 }
