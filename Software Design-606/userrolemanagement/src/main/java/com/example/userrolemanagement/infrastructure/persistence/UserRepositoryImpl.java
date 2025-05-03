@@ -2,6 +2,7 @@ package com.example.userrolemanagement.infrastructure.persistence;
 
 import com.example.userrolemanagement.application.interfaces.UserRepository;
 import com.example.userrolemanagement.domain.User;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -30,7 +31,8 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public List<User> findAll() {
-        return userJpaRepository.findAll().stream().map(UserJpaEntity::toDomainEntity).collect(Collectors.toList());
+    public List<User> findAll(int page, int size) {
+        PageRequest pageRequest = PageRequest.of(page,size);
+        return userJpaRepository.findAll(pageRequest).stream().map(UserJpaEntity::toDomainEntity).collect(Collectors.toList());
     }
 }

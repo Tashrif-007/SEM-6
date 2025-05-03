@@ -27,8 +27,8 @@ public class UserService {
         return userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User with ID "+id+" not found"));
     }
 
-    public List<User> getAllUsers() {
-        return userRepository.findAll();
+    public List<User> getAllUsers(int page, int size) {
+        return userRepository.findAll(page, size);
     }
 
     public void assignRoleToUser(UUID userId, UUID roleId) {

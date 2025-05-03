@@ -9,5 +9,5 @@ import java.util.UUID;
 public interface UserRepository {
     User save(User user);
     Optional<User> findById(UUID id);
-    List<User> findAll();
+    List<User> findAll(int page, int size);
 }
