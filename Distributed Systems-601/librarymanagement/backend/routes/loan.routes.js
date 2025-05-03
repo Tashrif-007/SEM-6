@@ -6,7 +6,7 @@ const loanRouter = express.Router();
 loanRouter.post("/", loanBook);
 loanRouter.post("/returns", returnBook);
 loanRouter.get("/overdue", getOverdueLoans);
-loanRouter.post("/:id/extend", extendLoan);
+loanRouter.put("/:id/extend", extendLoan);
 loanRouter.get("/:user_id", getUserLoans);
 
 export default loanRouter;

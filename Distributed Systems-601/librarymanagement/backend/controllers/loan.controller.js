@@ -26,7 +26,14 @@ export const loanBook = async(req,res) => {
                 },
             },
         });
-        res.status(201).json(loan);
+        res.status(201).json({
+          id: loan.id,
+          user_id,
+          book_id,
+          issue_date: loan.issueDate,
+          due_date: loan.dueDate,
+          status: loan.status
+        });
     } catch (error) {
         res.status(400).json({error: error.message});
     }
@@ -74,7 +81,21 @@ export const getUserLoans = async (req,res) => {
               book: { select: { id: true, title: true, author: true } }
             }
           });
-          res.json(loans);
+        
+          const formattedLoans = loans.map(loan => ({
+            id: loan.id,
+            book: {
+              id: loan.book.id,
+              title: loan.book.title,
+              author: loan.book.author
+            },
+            issue_date: loan.issueDate?.toISOString(),
+            due_date: loan.dueDate?.toISOString(),
+            return_date: loan.returnDate ? loan.returnDate.toISOString() : null,
+            status: loan.status
+          }));
+      
+          res.json(formattedLoans);
     } catch (error) {
         res.status(400).json({error: error.message})
     }
