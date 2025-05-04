@@ -4,6 +4,11 @@ const prisma = new PrismaClient();
 export const loanBook = async(req,res) => {
     const {user_id, book_id, dueDate} = req.body;
     try {
+        const user = await prisma.user.findUnique({where: {id: user_id}});
+        if(!user) {
+          return res.status(400).json({error: "User Invalid"});
+        }
+
         const book = await prisma.book.findUnique({where: {id: book_id}});
         if(!book || book.availableCopies<1) {
             return res.status(400).json({error: "Book not available"});
