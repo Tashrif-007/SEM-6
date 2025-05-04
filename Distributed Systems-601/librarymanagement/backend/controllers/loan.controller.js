@@ -1,15 +1,17 @@
 import { PrismaClient } from "@prisma/client";
+import { findBookById, updateBookAvailability } from "./book.controller.js";
+import { findUserById } from "./user.controller.js";
 const prisma = new PrismaClient();
 
 export const loanBook = async(req,res) => {
     const {user_id, book_id, dueDate} = req.body;
     try {
-        const user = await prisma.user.findUnique({where: {id: user_id}});
+        const user = await findUserById(user_id);
         if(!user) {
           return res.status(400).json({error: "User Invalid"});
         }
 
-        const book = await prisma.book.findUnique({where: {id: book_id}});
+        const book = await findBookById(book_id);
         if(!book || book.availableCopies<1) {
             return res.status(400).json({error: "Book not available"});
         }
@@ -23,14 +25,8 @@ export const loanBook = async(req,res) => {
             },
         });
 
-        await prisma.book.update({
-            where: {id: book_id},
-            data: {
-                availableCopies: {
-                    decrement: 1
-                },
-            },
-        });
+        await updateBookAvailability(book_id, 'decrement');
+
         res.status(201).json({
           id: loan.id,
           user_id,
@@ -55,14 +51,8 @@ export const returnBook = async (req,res) => {
             },
             include: {book: true}
         });
-        await prisma.book.update({
-            where: {id: loan.bookId},
-            data: {
-                availableCopies: {
-                    increment: 1
-                },
-            },
-        });
+        await updateBookAvailability(loan.bookId, 'decrement');
+
         res.json({
             id: loan.id,
             user_id: loan.userId,

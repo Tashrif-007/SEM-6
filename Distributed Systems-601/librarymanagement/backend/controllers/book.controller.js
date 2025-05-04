@@ -14,7 +14,7 @@ export const addBook = async (req,res) => {
 export const getBookById = async (req,res) => {
     const id = parseInt(req.params.id);
     try {
-        const book = await prisma.book.findUnique({where: {id}});
+        const book = await findBookById(id);
         if(!book) {
             return res.status(404).json({error: "User not found"});
         }
@@ -67,3 +67,24 @@ export const deleteBook = async(req,res) => {
         res.status(400).json({error: error.message});
     }
 }
+
+export const findBookById = async (book_id) => {
+    return await prisma.book.findUnique({ where: { id: book_id } });
+};
+
+export const updateBookAvailability = async (book_id, operation) => {
+  
+    if (!['increment', 'decrement'].includes(operation)) {
+      throw new Error("Invalid operation: must be 'increment' or 'decrement'");
+    }
+  
+    return await prisma.book.update({
+      where: { id: book_id },
+      data: {
+        availableCopies: {
+          [operation]: 1
+        }
+      }
+    });
+  };
+  
