@@ -103,7 +103,7 @@ src/main/java/com/example/usermanagement/
 - Spring Data JPA
 - H2 Database
 - Hibernate Validator
-- JUnit 5 (for testing)
+- JUnit 4 (for testing)
 - Mockito (for mocking in tests)
 
 ## Notes
@@ -117,11 +117,10 @@ src/main/java/com/example/usermanagement/
 - Pagination is implemented for the user list API using Spring Data's `Pageable`.
 - DTOs are used to encapsulate request and response data, preventing direct exposure of domain entities.
 
-## Bonus Features (Not Implemented)
-The following optional features were not included but can be added:
-- Audit fields (createdDate, updatedDate)
-- Swagger/OpenAPI documentation
-- Integration tests
+## Bonus Features 
+- Pagination for GET /users list API
+- Remove role from user API
+- Use DTOs
 
 ## Troubleshooting
 - **H2 Console Not Accessible**: Ensure the URL is correct and the application is running.
