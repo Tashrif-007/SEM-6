@@ -21,6 +21,9 @@ services:
       - "8083:8083"
     networks:
       - smartlib-net
+    environment:
+      USER_SERVICE_URL: http://user-service:8081
+      BOOK_SERVICE_URL: http://book-service:8082
 
   nginx:
     image: nginx:latest
