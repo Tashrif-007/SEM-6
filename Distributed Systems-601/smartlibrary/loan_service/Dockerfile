@@ -2,9 +2,10 @@ FROM node:18
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY . .
+
 RUN npm install
 
-COPY . .
+EXPOSE 8083
 
 CMD ["npm", "run", "server"]
