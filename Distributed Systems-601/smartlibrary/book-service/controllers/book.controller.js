@@ -12,8 +12,8 @@ export async function createBook(req, res) {
 
 export async function searchBooks(req, res) {
   try {
-    const { search, page = 1, per_page = 10 } = req.query;
-    const result = await bookService.searchBooks(search, parseInt(page), parseInt(per_page));
+    const { search} = req.query;
+    const result = await bookService.searchBooks(search);
     res.status(StatusCodes.OK).json(result);
   } catch (error) {
     res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({ error: error.message });

@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d187cd1-a267-4de6-b129-6e94c2548381" name="Changes" comment="" />
+    <list default="true" id="3d187cd1-a267-4de6-b129-6e94c2548381" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/grades_partially_invalid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Distributed Systems-601/smartlibrary/book-service/controllers/book.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Distributed Systems-601/smartlibrary/book-service/controllers/book.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Distributed Systems-601/smartlibrary/book-service/services/book.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Distributed Systems-601/smartlibrary/book-service/services/book.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyClassTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/FileIOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/FileIOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/math/ArithmeticOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/math/ArithmeticOperationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MyClassTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/FileIOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/FileIOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/math/ArithmeticOperationsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/math/ArithmeticOperationsTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +30,9 @@
         <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -33,19 +49,25 @@
     "JUnit.ArithmeticOperationsTest.divide_normal.executor": "Run",
     "JUnit.ArithmeticOperationsTest.divide_with_zero.executor": "Run",
     "JUnit.ArithmeticOperationsTest.executor": "Run",
+    "JUnit.ArithmeticOperationsTest.multiply_integer_overflow.executor": "Run",
     "JUnit.ArithmeticOperationsTest.multiply_when_negative.executor": "Run",
     "JUnit.ArrayOperationsTest.executor": "Run",
     "JUnit.ArrayOperationsTest.testFindPrimesInFileNormal.executor": "Run",
     "JUnit.FileIOTest.executor": "Run",
+    "JUnit.FileIOTest.readFileDirectoryInsteadOfFile.executor": "Run",
+    "JUnit.FileIOTest.readFileWithPartiallyInvalidEntries.executor": "Run",
     "JUnit.MyClassTest.div.executor": "Run",
     "JUnit.MyClassTest.div_with_zero.executor": "Run",
     "JUnit.MyMathTest.executor": "Run",
     "JUnit.MyMathTest.factorialNormal.executor": "Run",
     "JUnit.MyMathTest.isPrimeNormal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/tashrif/Desktop/SEM-6/Software Testing-605/unittesting",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
@@ -59,7 +81,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ArithmeticOperationsTest.multiply_integer_overflow">
     <configuration name="ArithmeticOperationsTest.divide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unittesting" />
       <extension name="coverage">
@@ -76,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArithmeticOperationsTest.divide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unittesting" />
+    <configuration name="ArithmeticOperationsTest.multiply_integer_overflow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seip2020_practical_assignments" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="math.*" />
@@ -86,23 +108,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="math" />
       <option name="MAIN_CLASS_NAME" value="math.ArithmeticOperationsTest" />
-      <option name="METHOD_NAME" value="divide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArithmeticOperationsTest.multiply_when_negative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unittesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.ArithmeticOperationsTest" />
-      <option name="METHOD_NAME" value="multiply_when_negative" />
+      <option name="METHOD_NAME" value="multiply_integer_overflow" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,6 +130,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FileIOTest.readFileDirectoryInsteadOfFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seip2020_practical_assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io" />
+      <option name="MAIN_CLASS_NAME" value="io.FileIOTest" />
+      <option name="METHOD_NAME" value="readFileDirectoryInsteadOfFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileIOTest.readFileWithPartiallyInvalidEntries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seip2020_practical_assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io" />
+      <option name="MAIN_CLASS_NAME" value="io.FileIOTest" />
+      <option name="METHOD_NAME" value="readFileWithPartiallyInvalidEntries" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyMathTest.factorialNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unittesting" />
       <extension name="coverage">
@@ -140,29 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMathTest.isPrimeNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unittesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.MyMathTest" />
-      <option name="METHOD_NAME" value="isPrimeNormal" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArithmeticOperationsTest.multiply_integer_overflow" />
+        <item itemvalue="JUnit.FileIOTest.readFileDirectoryInsteadOfFile" />
+        <item itemvalue="JUnit.FileIOTest.readFileWithPartiallyInvalidEntries" />
         <item itemvalue="JUnit.ArrayOperationsTest.testFindPrimesInFileNormal" />
         <item itemvalue="JUnit.MyMathTest.factorialNormal" />
-        <item itemvalue="JUnit.MyMathTest.isPrimeNormal" />
-        <item itemvalue="JUnit.ArithmeticOperationsTest.divide" />
-        <item itemvalue="JUnit.ArithmeticOperationsTest.multiply_when_negative" />
       </list>
     </recent_temporary>
   </component>
@@ -176,5 +198,16 @@
       <updated>1744792080046</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

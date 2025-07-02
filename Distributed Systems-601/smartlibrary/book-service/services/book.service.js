@@ -39,16 +39,6 @@ export const updateAvailability = async(id, availableCopies, operation) => {
   return Book.findByIdAndUpdate(id, updateData, { new: true });
 }
 
-// export async function updateAvailability(id, availableCopies, operation) {
-//   return prisma.book.update({
-//     where: { id },
-//     data: {
-//       availableCopies: operation === 'increment' 
-//         ? { increment: availableCopies }
-//         : { decrement: availableCopies },
-//     },
-//   });
-// }
 
 export const deleteBook = async(id) => {
   return Book.findByIdAndDelete(id);

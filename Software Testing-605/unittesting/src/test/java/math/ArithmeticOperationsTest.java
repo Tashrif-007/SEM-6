@@ -43,7 +43,9 @@ public class ArithmeticOperationsTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void multiply_integer_overflow() {
-        (new ArithmeticOperations()).multiply(Integer.MAX_VALUE*6, 7);
+        int x = Integer.MAX_VALUE / 2 + 1;
+        int y = 2;
+        (new ArithmeticOperations()).multiply(x, y);
     }
 
     @Test

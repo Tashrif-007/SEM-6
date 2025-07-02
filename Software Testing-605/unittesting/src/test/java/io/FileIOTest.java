@@ -37,4 +37,9 @@ public class FileIOTest {
         int[] actual = fileIO.readFile("/home/tashrif/Desktop/SEM-6/Software Testing-605/unittesting/src/test/resources/grades_invalid.txt");
         assertArrayEquals(expected, actual);
     }
+    @Test(expected = IllegalArgumentException.class)
+    public void readFileDirectoryInsteadOfFile() {
+        // Point to a directory that exists — like the resource folder itself
+        fileIO.readFile("/home/tashrif/Desktop/SEM-6/Software Testing-605/unittesting/src/test/resources");
+    }
 }

@@ -1,24 +1,30 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-<!--	<parent>-->
-		<groupId>gr.aueb.dmst.pandeliskirpoglou</groupId>
-		<artifactId>seip2020_practical_assignments</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-<!--	</parent>-->
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<!-- Info of module -->
-<!--	<artifactId>unittesting</artifactId>-->
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>gr.aueb.dmst.pandeliskirpoglou</groupId>
+	<artifactId>seip2020_practical_assignments</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
 	<name>Testing Arithmetic Operations</name>
 	<description>This is a module for testing basic arithmetic operations</description>
+	<properties>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
+	</properties>
 	<dependencies>
+		<!-- JUnit for testing -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>RELEASE</version>
+			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Mockito for mocking -->
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
@@ -27,5 +33,48 @@
 		</dependency>
 	</dependencies>
 
+	<build>
+		<plugins>
+
+			<!-- JaCoCo plugin for code coverage -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.10</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- PIT Mutation Testing plugin -->
+			<plugin>
+				<groupId>org.pitest</groupId>
+				<artifactId>pitest-maven</artifactId>
+				<version>1.15.2</version> <!-- latest as of now -->
+				<configuration>
+					<targetClasses>
+						<param>gr.aueb.dmst.pandeliskirpoglou.*</param> <!-- change this to your actual package -->
+					</targetClasses>
+					<targetTests>
+						<param>gr.aueb.dmst.pandeliskirpoglou.*</param> <!-- test package -->
+					</targetTests>
+					<threads>4</threads>
+					<mutationThreshold>80</mutationThreshold> <!-- optional -->
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
 
 </project>
