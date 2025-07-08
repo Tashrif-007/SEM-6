@@ -59,4 +59,19 @@ public class ArithmeticOperationsTest {
         int actual = (new ArithmeticOperations()).multiply(4,5);
         assertEquals(20,actual,1e-5);
     }
+
+    @Test
+    public void multiply_with_zero_first_parameter() {
+        int actual = (new ArithmeticOperations()).multiply(0, 5);
+        assertEquals(0, actual);
+    }
+
+    @Test
+    public void multiply_boundary_case_max_value() {
+        int y = 2;
+        int x = Integer.MAX_VALUE / y;
+        int expected = x * y;
+        int actual = (new ArithmeticOperations()).multiply(x, y);
+        assertEquals(expected, actual);
+    }
 }

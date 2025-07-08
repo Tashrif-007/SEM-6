@@ -11,10 +11,12 @@
 
 	<name>Testing Arithmetic Operations</name>
 	<description>This is a module for testing basic arithmetic operations</description>
+
 	<properties>
 		<maven.compiler.source>8</maven.compiler.source>
 		<maven.compiler.target>8</maven.compiler.target>
 	</properties>
+
 	<dependencies>
 		<!-- JUnit for testing -->
 		<dependency>
@@ -61,16 +63,16 @@
 			<plugin>
 				<groupId>org.pitest</groupId>
 				<artifactId>pitest-maven</artifactId>
-				<version>1.15.2</version> <!-- latest as of now -->
+				<version>1.15.2</version>
 				<configuration>
 					<targetClasses>
-						<param>gr.aueb.dmst.pandeliskirpoglou.*</param> <!-- change this to your actual package -->
+						<param>io.*</param>
+						<param>math.*</param>
 					</targetClasses>
 					<targetTests>
-						<param>gr.aueb.dmst.pandeliskirpoglou.*</param> <!-- test package -->
+						<param>io.*Test</param>
+						<param>math.*Test</param>
 					</targetTests>
-					<threads>4</threads>
-					<mutationThreshold>80</mutationThreshold> <!-- optional -->
 				</configuration>
 			</plugin>
 

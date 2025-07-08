@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="math.ArithmeticOperationsTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="math.ArithmeticOperationsTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -31,7 +31,7 @@
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="6.11.0-26-generic"/>
+    <property name="os.version" value="6.11.0-29-generic"/>
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/home/tashrif"/>
     <property name="user.timezone" value="Asia/Dhaka"/>
@@ -59,13 +59,13 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="math.ArithmeticOperationsTest" name="multiply_when_first_negative" time="0.002"/>
+  <testcase classname="math.ArithmeticOperationsTest" name="multiply_when_first_negative" time="0.003"/>
   <testcase classname="math.ArithmeticOperationsTest" name="divide_with_zero" time="0"/>
   <testcase classname="math.ArithmeticOperationsTest" name="multiply_when_second_negative" time="0"/>
   <testcase classname="math.ArithmeticOperationsTest" name="multiply_normal" time="0"/>
-  <testcase classname="math.ArithmeticOperationsTest" name="multiply_both_negative" time="0"/>
+  <testcase classname="math.ArithmeticOperationsTest" name="multiply_both_negative" time="0.001"/>
   <testcase classname="math.ArithmeticOperationsTest" name="multiply_zero" time="0"/>
   <testcase classname="math.ArithmeticOperationsTest" name="multiply_integer_overflow" time="0"/>
   <testcase classname="math.ArithmeticOperationsTest" name="divide_by_zero" time="0"/>
-  <testcase classname="math.ArithmeticOperationsTest" name="divide_normal" time="0.001"/>
+  <testcase classname="math.ArithmeticOperationsTest" name="divide_normal" time="0"/>
 </testsuite>

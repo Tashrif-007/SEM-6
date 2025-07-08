@@ -5,18 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d187cd1-a267-4de6-b129-6e94c2548381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/grades_partially_invalid.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Distributed Systems-601/smartlibrary/book-service/controllers/book.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Distributed Systems-601/smartlibrary/book-service/controllers/book.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Distributed Systems-601/smartlibrary/book-service/services/book.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Distributed Systems-601/smartlibrary/book-service/services/book.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyClassTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyClass.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/io/FileIOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/FileIOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/math/ArithmeticOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/math/ArithmeticOperationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MyClassTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/seip2020_practical_assignments-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/seip2020_practical_assignments-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/MyClass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/MyClass.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-io.FileIOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-io.FileIOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-math.ArithmeticOperationsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-math.ArithmeticOperationsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-math.ArrayOperationsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-math.ArrayOperationsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-math.MyMathTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-math.MyMathTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/io.FileIOTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/io.FileIOTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/math.ArrayOperationsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/math.ArrayOperationsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/math.MyMathTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/math.MyMathTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/io/FileIOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/FileIOTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/math/ArithmeticOperationsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/math/ArithmeticOperationsTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +60,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.All in seip2020_practical_assignments.executor": "Run",
     "JUnit.ArithmeticOperationsTest.divide.executor": "Run",
     "JUnit.ArithmeticOperationsTest.divide_normal.executor": "Run",
     "JUnit.ArithmeticOperationsTest.divide_with_zero.executor": "Run",
@@ -56,6 +72,7 @@
     "JUnit.FileIOTest.executor": "Run",
     "JUnit.FileIOTest.readFileDirectoryInsteadOfFile.executor": "Run",
     "JUnit.FileIOTest.readFileWithPartiallyInvalidEntries.executor": "Run",
+    "JUnit.FileIOTest.testIOExceptionHandled.executor": "Run",
     "JUnit.MyClassTest.div.executor": "Run",
     "JUnit.MyClassTest.div_with_zero.executor": "Run",
     "JUnit.MyMathTest.executor": "Run",
@@ -67,7 +84,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/tashrif/Desktop/SEM-6/Software Testing-605/unittesting",
+    "last_opened_file_path": "/home/tashrif/Downloads/food",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
@@ -81,19 +98,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArithmeticOperationsTest.multiply_integer_overflow">
-    <configuration name="ArithmeticOperationsTest.divide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unittesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.ArithmeticOperationsTest" />
-      <option name="METHOD_NAME" value="divide" />
-      <option name="TEST_OBJECT" value="method" />
+  <component name="RunManager">
+    <configuration name="All in seip2020_practical_assignments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seip2020_practical_assignments" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,22 +118,6 @@
       <option name="PACKAGE_NAME" value="math" />
       <option name="MAIN_CLASS_NAME" value="math.ArithmeticOperationsTest" />
       <option name="METHOD_NAME" value="multiply_integer_overflow" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayOperationsTest.testFindPrimesInFileNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unittesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.ArrayOperationsTest" />
-      <option name="METHOD_NAME" value="testFindPrimesInFileNormal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,17 +155,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMathTest.factorialNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unittesting" />
+    <configuration name="FileIOTest.testIOExceptionHandled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seip2020_practical_assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="math.*" />
+          <option name="PATTERN" value="io.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.MyMathTest" />
-      <option name="METHOD_NAME" value="factorialNormal" />
+      <option name="PACKAGE_NAME" value="io" />
+      <option name="MAIN_CLASS_NAME" value="io.FileIOTest" />
+      <option name="METHOD_NAME" value="testIOExceptionHandled" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileIOTest.testIOExceptionHandled" />
+        <item itemvalue="JUnit.All in seip2020_practical_assignments" />
         <item itemvalue="JUnit.ArithmeticOperationsTest.multiply_integer_overflow" />
         <item itemvalue="JUnit.FileIOTest.readFileDirectoryInsteadOfFile" />
         <item itemvalue="JUnit.FileIOTest.readFileWithPartiallyInvalidEntries" />
-        <item itemvalue="JUnit.ArrayOperationsTest.testFindPrimesInFileNormal" />
-        <item itemvalue="JUnit.MyMathTest.factorialNormal" />
       </list>
     </recent_temporary>
   </component>
