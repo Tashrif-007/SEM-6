@@ -35,4 +35,24 @@ public class MyMathTest {
     public void factorialOutBoundLessThanZero() {
         (new MyMath()).factorial(-2);
     }
+
+    @Test
+    public void factorialBoundaryZero() {
+        assertEquals(1, (new MyMath()).factorial(0));
+    }
+
+    @Test
+    public void factorialBoundaryTwelve() {
+        assertEquals(479001600, (new MyMath()).factorial(12));
+    }
+
+    @Test
+    public void isPrimeBoundaryTwo() {
+        assertEquals(true, (new MyMath()).isPrime(2));
+    }
+
+     @Test
+     public void isPrimeFour() {
+         assertEquals(false, (new MyMath()).isPrime(4));
+     }
 }

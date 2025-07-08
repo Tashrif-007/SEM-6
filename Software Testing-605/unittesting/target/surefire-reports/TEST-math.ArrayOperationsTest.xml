@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="math.ArrayOperationsTest" time="0.922" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="math.ArrayOperationsTest" time="1.503" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -59,7 +59,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="math.ArrayOperationsTest" name="testFindPrimesInFileException" time="0.914"/>
-  <testcase classname="math.ArrayOperationsTest" name="testFindPrimesInFileEmptyFile" time="0.004"/>
-  <testcase classname="math.ArrayOperationsTest" name="testFindPrimesInFileNormal" time="0.004"/>
+  <testcase classname="math.ArrayOperationsTest" name="testFindPrimesInFileException" time="1.491"/>
+  <testcase classname="math.ArrayOperationsTest" name="testFindPrimesInFileEmptyFile" time="0.006"/>
+  <testcase classname="math.ArrayOperationsTest" name="testFindPrimesInFileNormal" time="0.006"/>
 </testsuite>
