@@ -757,16 +757,16 @@
 <a name='org.pitest.mutationtest.report.html.SourceFile@6babffb5_50'/>
 50
 </td>
-<td class='survived'>
+<td class='killed'>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6babffb5_50'>1</a>
 <span>
-1. readFile : removed call to java/io/IOException::printStackTrace &rarr; SURVIVED<br/>
+1. readFile : removed call to java/io/IOException::printStackTrace &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;e.printStackTrace();</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;e.printStackTrace();</span></pre></td></tr>
 
 
 <tr>
@@ -954,7 +954,7 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@6babffb5_50'/> 
 
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>readFile<br/><b>Killed by : </b>none</span></span> removed call to java/io/IOException::printStackTrace &rarr; SURVIVED</p> 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>readFile<br/><b>Killed by : </b>io.FileIOTest.testIOExceptionHandling(io.FileIOTest)</span></span> removed call to java/io/IOException::printStackTrace &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
@@ -999,7 +999,7 @@
 
 <h2>Tests examined</h2>
 <ul>
-<li>io.FileIOTest.test_for_invalid_entry(io.FileIOTest) (1 ms)</li><li>io.FileIOTest.readFileNormal(io.FileIOTest) (3 ms)</li><li>io.FileIOTest.readFileEmpty(io.FileIOTest) (0 ms)</li><li>io.FileIOTest.readFileDoesNotExist(io.FileIOTest) (0 ms)</li><li>io.FileIOTest.readFileDirectoryInsteadOfFile(io.FileIOTest) (8 ms)</li><li>io.FileIOTest.testIOExceptionHandled(io.FileIOTest) (18 ms)</li>
+<li>io.FileIOTest.test_for_invalid_entry(io.FileIOTest) (1 ms)</li><li>io.FileIOTest.readFileNormal(io.FileIOTest) (8 ms)</li><li>io.FileIOTest.readFileEmpty(io.FileIOTest) (1 ms)</li><li>io.FileIOTest.readFileDoesNotExist(io.FileIOTest) (2 ms)</li><li>io.FileIOTest.testIOExceptionPath(io.FileIOTest) (4 ms)</li><li>io.FileIOTest.testIOExceptionHandling(io.FileIOTest) (3 ms)</li><li>io.FileIOTest.readFileDirectoryInsteadOfFile(io.FileIOTest) (12 ms)</li>
 </ul>
 
 <br/>

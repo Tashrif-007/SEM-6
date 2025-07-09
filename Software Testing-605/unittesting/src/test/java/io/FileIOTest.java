@@ -3,9 +3,7 @@ package io;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 import static org.junit.Assert.*;
 
@@ -47,24 +45,30 @@ public class FileIOTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testIOExceptionHandled() throws IOException {
-        // Create a temp file and delete it before reading
-        File file = File.createTempFile("testio", ".txt");
-        FileWriter fw = new FileWriter(file);
-        fw.write("1\n2\n3");
-        fw.close();
-
-        String path = file.getAbsolutePath();
-        assertTrue("Temp file should exist", file.exists());
-
-        // Delete file to force IOException
-        assertTrue("Deleting temp file to cause IOException", file.delete());
-        assertFalse("File should be deleted", new File(path).exists());
-
-        // This should trigger IOException, but not crash
-        int[] result = fileIO.readFile(path);
-
-        // Result should be empty or default depending on catch logic
-        assertEquals(0, result.length);
+    public void testIOExceptionPath() {
+        // Test a scenario that will trigger IOException in the catch block on line 50
+        // This ensures the IOException catch block (including e.printStackTrace()) is executed
+        // The method should catch IOException, print stack trace, then throw IllegalArgumentException
+        // because the numbersList will be empty after IOException
+        fileIO.readFile("/proc/1/mem"); // This will cause IOException during reading
+    }
+    @Test
+    public void testIOExceptionHandling() {
+        File dir = new File("src/test/resources/io_exception_dir");
+        if (!dir.exists()) {
+            assertTrue(dir.mkdirs());  // create as a directory
+        }
+        PrintStream originalErr = System.err;
+        ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+        System.setErr(new PrintStream(errContent));
+        try {
+            fileIO.readFile(dir.getAbsolutePath());
+        } catch (Exception ignored) {
+        } finally {
+            System.setErr(originalErr);
+            assertTrue(dir.delete());
+        }
+        String output = errContent.toString();
+        assertTrue("Should contain IOException in stack trace", output.contains("IOException"));
     }
 }
