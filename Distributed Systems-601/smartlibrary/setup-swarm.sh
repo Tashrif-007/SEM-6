@@ -36,6 +36,7 @@ docker pull tashrif2001/smartlibrary:user-service
 docker pull tashrif2001/smartlibrary:book-service
 docker pull tashrif2001/smartlibrary:loan-service
 docker pull nginx:latest
+docker pull mongo:latest
 
 echo "✅ All images pulled successfully!"
 echo ""

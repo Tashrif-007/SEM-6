@@ -1,29 +1,77 @@
 version: "3.8"
 
 services:
+  # MongoDB Services
+  mongo-user:
+    image: mongo:latest
+    container_name: mongo-user
+    environment:
+      MONGO_INITDB_DATABASE: userDB
+    volumes:
+      - mongo_user_data:/data/db
+    networks:
+      - smartlib-overlay
+    restart: unless-stopped
+
+  mongo-book:
+    image: mongo:latest
+    container_name: mongo-book
+    environment:
+      MONGO_INITDB_DATABASE: bookDB
+    volumes:
+      - mongo_book_data:/data/db
+    networks:
+      - smartlib-overlay
+    restart: unless-stopped
+
+  mongo-loan:
+    image: mongo:latest
+    container_name: mongo-loan
+    environment:
+      MONGO_INITDB_DATABASE: loanDB
+    volumes:
+      - mongo_loan_data:/data/db
+    networks:
+      - smartlib-overlay
+    restart: unless-stopped
+
+  # Application Services
   user-service:
     build: ./user-service
     ports:
       - "8081:8081"
+    environment:
+      MONGO_URL: mongodb://mongo-user/userDB
+    depends_on:
+      - mongo-user
     networks:
-      - smartlib-net
+      - smartlib-overlay
 
   book-service:
     build: ./book-service
     ports:
       - "8082:8082"
+    environment:
+      MONGO_URL: mongodb://mongo-book/bookDB
+    depends_on:
+      - mongo-book
     networks:
-      - smartlib-net
+      - smartlib-overlay
 
   loan-service:
     build: ./loan_service
     ports:
       - "8083:8083"
-    networks:
-      - smartlib-net
     environment:
+      MONGO_URL: mongodb://mongo-loan/loanDB
       USER_SERVICE_URL: http://user-service:8081
       BOOK_SERVICE_URL: http://book-service:8082
+    depends_on:
+      - mongo-loan
+      - user-service
+      - book-service
+    networks:
+      - smartlib-overlay
 
   nginx:
     image: nginx:latest
@@ -36,7 +84,12 @@ services:
       - book-service
       - loan-service
     networks:
-      - smartlib-net
+      - smartlib-overlay
 
 networks:
-  smartlib-net:
+  smartlib-overlay:
+
+volumes:
+  mongo_user_data:
+  mongo_book_data:
+  mongo_loan_data:
