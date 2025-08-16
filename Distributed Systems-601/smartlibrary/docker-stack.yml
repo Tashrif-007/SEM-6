@@ -62,12 +62,9 @@ services:
     networks:
       - smartlib-overlay
     deploy:
-      replicas: 3
+      replicas: 2
       restart_policy:
         condition: on-failure
-      placement:
-        constraints:
-          - node.role == manager
 
   book-service:
     image: tashrif2001/smartlibrary:book-service
@@ -80,12 +77,9 @@ services:
     networks:
       - smartlib-overlay
     deploy:
-      replicas: 3
+      replicas: 2
       restart_policy:
         condition: on-failure
-      # placement:
-      #   constraints:
-      #     - node.role == worker
 
   loan-service:
     image: tashrif2001/smartlibrary:loan-service
@@ -102,7 +96,7 @@ services:
     networks:
       - smartlib-overlay
     deploy:
-      replicas: 3
+      replicas: 2
       restart_policy:
         condition: on-failure
       # placement:
@@ -128,7 +122,6 @@ services:
 networks:
   smartlib-overlay:
     driver: overlay
-    attachable: true
 
 volumes:
   mongo_user_data:
